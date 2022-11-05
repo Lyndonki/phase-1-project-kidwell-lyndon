@@ -12,3 +12,9 @@ th,
 td {
     border: 1px solid;
 }
+
+#returnButton {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
