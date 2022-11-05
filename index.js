@@ -10,6 +10,30 @@ function getShows() {
             // Iterate through every item in the array
             data.forEach(show => {
 
+                // Create a new row
+                const row = document.createElement("tr");
+
+                // Create a new cell for the image
+                const imageCell = document.createElement("td");
+                const image = document.createElement("img");
+                image.src = show.show.image.medium;
+                imageCell.appendChild(image);
+
+                // Create a new cell for the show name
+                const cell = document.createElement("td");
+                cell.innerHTML = show.show.name;
+
+                // Create a new cell for the summary
+                const cell2 = document.createElement("td");
+                cell2.innerHTML = show.show.summary;
+
+                // Add the cell to the row
+                row.appendChild(imageCell);
+                row.appendChild(cell);
+                row.appendChild(cell2);
+
+                // Add the row to the table
+                document.getElementById("shows").appendChild(row);
             });
         });
 
