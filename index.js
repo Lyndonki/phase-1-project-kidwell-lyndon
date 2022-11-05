@@ -52,3 +52,10 @@ function returnToTop() {
 }
 
 document.getElementById("returnButton").addEventListener("click", returnToTop);
+
+document.getElementById("search").addEventListener("keyup", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        getShows();
+    }
+});
