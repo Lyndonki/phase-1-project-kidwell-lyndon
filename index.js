@@ -51,3 +51,4 @@ function returnToTop() {
     document.documentElement.scrollTop = 0;
 }
 
+document.getElementById("returnButton").addEventListener("click", returnToTop);
