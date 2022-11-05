@@ -4,3 +4,7 @@ A single page application uses a public API to search for TV shows and displays 
 ## Usage
 
 Open `index.html`, type text in the search bar, and click on the search button.
+
+## Attributions
+
+https://api.tvmaze.com - Used to search for the Tv shows
