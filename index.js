@@ -46,4 +46,8 @@ function getShows() {
         });
 
 }
+function returnToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 
