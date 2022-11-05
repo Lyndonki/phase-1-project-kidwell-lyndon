@@ -27,6 +27,14 @@ function getShows() {
                 const cell2 = document.createElement("td");
                 cell2.innerHTML = show.show.summary;
 
+                // Change the color of the row when you hover over it
+                row.addEventListener("mouseover", function () {
+                    row.style.backgroundColor = "lightgrey";
+                });
+
+                row.addEventListener("mouseout", function () {
+                    row.style.backgroundColor = "white";
+                });
                 // Add the cell to the row
                 row.appendChild(imageCell);
                 row.appendChild(cell);
