@@ -5,6 +5,8 @@ function getShows() {
         .then(res => res.json())
         .then(data => {
 
+            document.getElementById("shows").innerHTML = "";
+
             // Iterate through every item in the array
             data.forEach(show => {
 
