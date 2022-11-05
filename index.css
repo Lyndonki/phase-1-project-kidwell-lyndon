@@ -18,3 +18,8 @@ td {
     bottom: 5px;
     right: 5px;
 }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: brown
+}
